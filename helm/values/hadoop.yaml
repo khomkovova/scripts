@@ -72,7 +72,7 @@ yarn:
 
 persistence:
   nameNode:
-    enabled: true
+    enabled: false
     storageClass: "hostpath"
     accessMode: ReadWriteOnce
     size: 50Gi
