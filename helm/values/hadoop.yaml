@@ -78,7 +78,7 @@ persistence:
     size: 50Gi
 
   dataNode:
-    enabled: true
+    enabled: false
     storageClass: "hostpath"
     accessMode: ReadWriteOnce
     size: 200Gi
