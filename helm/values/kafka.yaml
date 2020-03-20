@@ -42,7 +42,7 @@ image:
 ## volumePermissions: Change the owner and group of the persistent volume mountpoint to runAsUser:fsGroup values from the securityContext section.
 ##
 volumePermissions:
-  enabled: false
+  enabled: true
   image:
     registry: docker.io
     repository: bitnami/minideb
@@ -303,7 +303,7 @@ serviceAccount:
 ##   GKE, AWS & OpenStack)
 ##
 persistence:
-  enabled: true
+  enabled: false
   ## A manually managed Persistent Volume and Claim
   ## If defined, PVC must be created manually before volume will be bound
   ## The value is evaluated as a template, so, for example, the name can depend on .Release or .Chart
@@ -571,7 +571,7 @@ metrics:
 zookeeper:
   enabled: true
   volumePermissions:
-    enabled: true
+    enabled: false
 externalZookeeper:
   ## This value is only used when zookeeper.enabled is set to false
 
